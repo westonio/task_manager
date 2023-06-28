@@ -15,4 +15,7 @@ class TasksController < ApplicationController
     redirect_to '/tasks'
   end
 
+  def show
+    @task = Task.find(params[:id])
+  end
 end
