@@ -1,0 +1,11 @@
+<h1>Create Task</h1>
+
+<form action="/tasks" method="POST">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <p>Enter a New Task</p>
+  <label for="title">Title:</label><br/>
+  <input type="text" name="task[title]"><br/>
+  <label for="description">Description:</label><br/>
+  <textarea name="task[description]"></textarea><br/>
+  <input type="submit">
+</form>
